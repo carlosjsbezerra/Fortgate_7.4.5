@@ -1,4 +1,4 @@
-### A imagem mostra a seção **Actions when Inactive** com a opção **Update static route** ativada. Vamos entender o que essa configuração faz:
+### Seção **Actions when Inactive** com a opção **Update static route** ativada. Vamos entender o que essa configuração faz:
 
 ---
 
