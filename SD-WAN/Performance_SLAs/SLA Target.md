@@ -24,17 +24,10 @@
      - Para serviços mais tolerantes à perda de pacotes (como navegação na web), um valor de **2%** pode ser aceitável. No entanto, acima de **2%** a qualidade do serviço já pode começar a ser visivelmente afetada.
 
 ### Como escolher os valores ideais para sua rede:
-- **Aplicações críticas (VoIP, Videoconferência):**
-  - **Latência:** < 50 ms
-  - **Jitter:** < 30 ms
-  - **Perda de pacotes:** 0% a 1%
 
-- **Uso comum (Navegação, Streaming, Downloads):**
-  - **Latência:** < 100 ms
-  - **Jitter:** < 50 ms
-  - **Perda de pacotes:** Até 1% ou 2%
+| Tipo de Aplicação                          | Latência       | Jitter        | Perda de Pacotes   |
+|--------------------------------------------|----------------|---------------|--------------------|
+| **Aplicações Críticas (VoIP, Videoconferência)** | < 50 ms        | < 30 ms       | 0% a 1%            |
+| **Uso Comum (Navegação, Streaming, Downloads)**  | < 100 ms       | < 50 ms       | Até 1% ou 2%       |
+| **Redes com Baixa Qualidade (Mais Tolerância)** | Até 150 ms     | Até 50 ms     | Até 2%             |
 
-- **Redes com baixa qualidade (mais tolerância a variações):**
-  - **Latência:** Até 150 ms
-  - **Jitter:** Até 50 ms
-  - **Perda de pacotes:** Até 2%
