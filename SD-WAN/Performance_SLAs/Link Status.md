@@ -41,6 +41,10 @@ A seção **Link Status** define como o FortiGate monitora a conectividade de um
 ---
 
 ### Resumo das Recomendações:
-- **Check Interval (500 ms):** Esse valor é equilibrado para monitoramento quase em tempo real. Se você quiser reduzir o tráfego de verificação, pode aumentar o intervalo.
-- **Failures before inactive (5):** Um valor apropriado para evitar desativações por falhas temporárias, mas ainda rápido o suficiente para detectar links problemáticos.
-- **Restore link after (5):** Garante que o link seja restaurado apenas após ter mostrado estabilidade por pelo menos **2,5 segundos**.
+
+| Tipo de Aplicação                        | Check Interval | Failures before inactive | Restore link after |
+|------------------------------------------|----------------|--------------------------|--------------------|
+| **Aplicações Críticas (VoIP, Videoconferência)** | 250 ms         | 3                        | 3                  |
+| **Uso Comum (Navegação, Streaming)**            | 500 ms         | 5                        | 5                  |
+| **Redes com Baixa Qualidade (Tolerância Maior)**| 1000 ms        | 7                        | 7                  |
+
